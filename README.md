@@ -1,20 +1,24 @@
-## 🗺️ Trilha de Aprendizado & Fontes Ancoradas
+# Desafio de Projeto: Caderno Temático com NotebookLM (DIO)
 
-O plano de estudos está ancorado nos pilares fundamentais da engenharia moderna, utilizando literatura de ponta e documentações oficiais:
+## 🎯 Contexto e Objetivos
+O assunto escolhido para este caderno temático é a **Engenharia de Dados Moderna**. O objetivo deste material é construir uma base conceitual e prática robusta, cobrindo desde os fundamentos do ciclo de vida dos dados até ferramentas de transformação (dbt) e arquiteturas modernas de armazenamento (Lakehouse), servindo como guia de consulta rápida e portfólio de estudos.
 
-### 1. Fundamentos e Ciclo de Vida dos Dados
-*   **Referência:** *Fundamentals of Data Engineering* (Joe Reis & Matt Housley).
-*   **Foco:** Entendimento agnóstico de tecnologia sobre ingestão, armazenamento, transformação e servir dados, além dos subtextos de segurança, governança e engenharia de software.
+## 📚 Curadoria de Fontes (Ancoragem no NotebookLM)
+Foram selecionadas 4 fontes estratégicas e abertas para alimentar a inteligência artificial sem alucinações:
+1. **Livro: Fundamentals of Data Engineering** (Joe Reis & Matt Housley) - Guia agnóstico sobre o ciclo de vida dos dados.
+2. **Documentação Oficial do dbt (Introduction, Models & Tests)** - Padrão de mercado para transformações SQL estruturadas.
+3. **Artigo Técnico Databricks (What is a Data Lakehouse?)** - Base para entendimento da arquitetura de medalhão.
+4. **The Data Engineering Cookbook (Andreas Kretz)** - Princípios práticos de engenharia de software aplicados a dados.
 
-### 2. Modelagem de Dados e Arquitetura
-*   **Clássica (Kimball):** Técnicas de Modelagem Dimensional, Tabelas Fato, Tabelas Dimensão e tratamento de dimensões que mudam lentamente (SCD Tipo 2).
-*   **Moderna (Lakehouse):** Arquitetura de Medalhão (Camadas *Bronze*, *Silver* e *Gold*) unindo a confiabilidade do Data Warehouse à flexibilidade do Data Lake.
+## 🧠 Engenharia de Prompts e "Cicatrizes" (Troubleshooting)
 
-### 3. Transformação e Engenharia de Software Aplicada
-*   **Transformação Moderna (dbt):** Modelagem analítica utilizando SQL estruturado sob controle de versão, testes automatizados de qualidade e documentação nativa.
-*   **Princípios Práticos:** Idempotência em pipelines de dados, conteinerização com Docker e isolamento de ambientes.
+### Prompt de Estruturação Principal Testado:
+> *"Atue como um Arquiteto de Dados Sênior e Mentor. Com base em todas as fontes do meu caderno, crie um roteiro de estudos de 4 semanas focado em me levar do zero até a capacidade de desenhar um pipeline de dados moderno. Para cada semana, defina o conceito teórico principal que devo dominar e qual ferramenta prática devo focar."*
+*   **Resultado:** A IA cruzou perfeitamente os capítulos teóricos do livro do Joe Reis com os módulos práticos da documentação do dbt, gerando o cronograma contido neste guia.
 
----
+### 🩹 Cicatrizes e Desafios Encontrados (Troubleshooting):
+*   **O Problema:** Inicialmente, a intenção era utilizar o link direto do curso gratuito *dbt Fundamentals*. No entanto, o NotebookLM não consegue ler dados atrás de telas de login ou registros (Paywalls).
+*   **A Solução:** Para contornar a limitação de acesso da IA, foi realizada uma curadoria substituta apontando diretamente para os links públicos da documentação técnica do dbt (`docs.getdbt.com`), garantindo a mesma qualidade técnica de dados para o modelo, ou utilizando a técnica de "Copied Text" para trechos específicos extraídos manualmente das aulas.
 
 ## 🚀 Roteiro Sugerido (Foco de 4 Semanas)
 
@@ -34,6 +38,3 @@ O plano de estudos está ancorado nos pilares fundamentais da engenharia moderna
 ---
 *Manual estruturado para guiar a transição da teoria sólida para a excelência em engenharia de dados de produção.*
 """
-
-with open("README.md", "w", encoding="utf-8") as f:
-    f.write(readme_content)
